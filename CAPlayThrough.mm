@@ -228,7 +228,7 @@ OSStatus CAPlayThrough::Init(AudioDeviceID input, AudioDeviceID output)
     tmp = nil;// = new CAPlayThroughObjC();
 //    tmp.alloc();
 //    tmp.init();
-    tmp = initializeInstance(&tmp);
+   // tmp = initializeInstance(&tmp);
     
     
     
@@ -287,6 +287,7 @@ void CAPlayThrough::Cleanup()
 
 OSStatus CAPlayThrough::Start()
 {
+    tmp = initializeInstance(&tmp);
 	OSStatus err = noErr;
 	if(!IsRunning()){		
 		//Start pulling for audio data
@@ -808,6 +809,7 @@ OSStatus CAPlayThrough::OutputProc(void *inRefCon,
 		This->mInToOutSampleOffset = TimeStamp->mSampleTime - bufferStartTime;
 	}
     
+     
 	return noErr;
 }
 

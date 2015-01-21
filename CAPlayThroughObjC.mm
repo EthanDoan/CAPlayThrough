@@ -10,49 +10,77 @@
 #import "CAPlayThroughObjC.h"
 
 @implementation CAPlayThroughObjC
+static CAPlayThroughObjC* _sharedCAPlayThroughObjC = nil;
+@synthesize server;
+@synthesize serverStarted;
+@synthesize streaming;
+@synthesize btnStartStream;
+@synthesize btnStartServer;
+@synthesize tfPort;
 
-void TransferAudioBuffer (void *self,  AudioBufferList *list)
+void TransferAudioBuffer (void *THIS,  AudioBufferList *list)
 {
-    if(self == Nil)
-    {
-        self = [[CAPlayThroughObjC alloc]init];
-        [(id) self initVariables];
-    }
+//    if(THIS == Nil)
+//    {
+//        THIS = [[CAPlayThroughObjC alloc]init];
+//        [(id)THIS initVariables];
+//    }
 //    @autoreleasepool {
-    NSData *tmp =  [(id) self encodeAudioBufferList:list];
+    
+     [(/*__bridge */id) THIS encodeAudioBufferList:list];
+    
+    
 //    list = [(id) self decodeAudioBufferList:tmp];
 //    return list;
 //    }
+    
 }
-void* initializeInstance(void *self){
-    self = [[CAPlayThroughObjC alloc]init];
-    [(id)self initVariables];
-    return self;
+void* initializeInstance(void *THIS){
+    THIS = [CAPlayThroughObjC sharedCAPlayThroughObjC:nil];//[[CAPlayThroughObjC alloc]init];
+    [(/*__bridge */id)THIS initVariables];
+    return THIS;
 }
-
++(CAPlayThroughObjC*)sharedCAPlayThroughObjC:(CAPlayThroughObjC*) Playthrough
+{
+    @synchronized([CAPlayThroughObjC class])
+    {
+        if (!_sharedCAPlayThroughObjC)
+            _sharedCAPlayThroughObjC = Playthrough;
+        
+        return _sharedCAPlayThroughObjC;
+    }
+    
+    return nil;
+}
 -(void)initVariables
 {
     if (abl == Nil) {
         abl = (AudioBufferList*) malloc(sizeof(AudioBufferList));
         byteData = (Byte*) malloc(1024); //should maybe be a different value in the future
         byteData2 = (Byte*) malloc(1024);
+        streaming = false;
+        server = [[[Server alloc] init] retain];
     }
 }
 
-- (NSData *)encodeAudioBufferList:(AudioBufferList *)ablist {
+- (void)encodeAudioBufferList:(AudioBufferList *)ablist {
     //NSMutableData *data = [NSMutableData data];
-    if(mutableData == nil){
-        mutableData = [NSMutableData data];
-    } else {
-        [mutableData setLength:0];
-    }
+    if(streaming == true){
+        if(mutableData == nil){
+            mutableData = [NSMutableData data];
+        } else {
+            [mutableData setLength:0];
+        }
     
-    for (UInt32 y = 0; y < ablist->mNumberBuffers; y++){
-        AudioBuffer ab = ablist->mBuffers[y];
-        Float32 *frame = (Float32*)ab.mData;
-        [mutableData appendBytes:frame length:ab.mDataByteSize];
+        for (UInt32 y = 0; y < ablist->mNumberBuffers; y++){
+            AudioBuffer ab = ablist->mBuffers[y];
+            Float32 *frame = (Float32*)ab.mData;
+            [mutableData appendBytes:frame length:ab.mDataByteSize];
+        }
+        
+        [server send:mutableData];
+       // return mutableData;
     }
-    return mutableData;
 }
 
 - (AudioBufferList *)decodeAudioBufferList:(NSData *)data {
@@ -112,6 +140,31 @@ void* initializeInstance(void *self){
     return nil;
 }
 
+-(void)btnStartServerClicked:(id)sender{
+    [server createServerOnPort:[tfPort intValue]];
+    serverStarted = true;
+}
 
+-(void)btnStartStreamClicked:(id)sender{
+    if (serverStarted) {
+        
+        if (streaming == false) {
+            //Start stream
+//            btnStartStream.stringValue = [NSString stringWithFormat:@"Stop stream"];
+            btnStartStream.title = [NSString stringWithFormat:@"Stop stream"];
+            streaming = true;
+            
+            
+            //First test sending data
+            /*NSString *testString = @"test";
+             NSData *testData = [testString dataUsingEncoding:NSUTF8StringEncoding];
+             [server send:testData];*/
+        } else {
+            btnStartStream.title = [NSString stringWithFormat:@"Start stream"];
+            streaming = false;
+        }
+    }
+
+}
 
 @end

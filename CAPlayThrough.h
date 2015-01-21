@@ -87,6 +87,9 @@ public:
 	OSStatus	Start();
 	OSStatus	Stop();
 	Boolean		IsRunning();
+    
+    void        setPlayThroughObjC(CAPlayThroughObjC *capobjc, CAPlayThroughHost * caph);
+    CAPlayThroughObjC *capobjc;
 
 private:
 	CAPlayThrough* GetPlayThrough() { return mPlayThrough; }

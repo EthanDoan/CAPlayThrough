@@ -46,7 +46,7 @@
 */ 
 
 #import "CAPlayThroughController.h"
-
+#import "CAPlayThroughObjC.h"
 @implementation CAPlayThroughController
 static void	BuildDeviceMenu(AudioDeviceList *devlist, NSPopUpButton *menu, AudioDeviceID initSel);
 
@@ -89,6 +89,8 @@ static void	BuildDeviceMenu(AudioDeviceList *devlist, NSPopUpButton *menu, Audio
 		NSLog(@"ERROR: playThroughHost init failed!");
 		exit(1);
 	}
+    
+    [CAPlayThroughObjC sharedCAPlayThroughObjC:playthrough];
 }
 
 - (void) dealloc 

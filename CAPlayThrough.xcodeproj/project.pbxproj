@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B658F0A17E7E0FD00E2ADDE /* CARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B658F0217E7E0FD00E2ADDE /* CARingBuffer.cpp */; };
+		2B658F0A17E7E0FD00E2ADDE /* CARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B658F0217E7E0FD00E2ADDE /* CARingBuffer.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2B658F0B17E7E0FD00E2ADDE /* CARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B658F0217E7E0FD00E2ADDE /* CARingBuffer.cpp */; };
-		2B658F0E17E7E0FD00E2ADDE /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B658F0417E7E0FD00E2ADDE /* CAStreamBasicDescription.cpp */; };
+		2B658F0E17E7E0FD00E2ADDE /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B658F0417E7E0FD00E2ADDE /* CAStreamBasicDescription.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2B658F0F17E7E0FD00E2ADDE /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B658F0417E7E0FD00E2ADDE /* CAStreamBasicDescription.cpp */; };
 		2B9BE3BF17E7E5C200927DE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9BE3BD17E7E5C200927DE6 /* MainMenu.xib */; };
 		2B9BE3C017E7E5C200927DE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9BE3BD17E7E5C200927DE6 /* MainMenu.xib */; };
@@ -30,18 +30,26 @@
 		8B9E523A0687AE9C00738FA5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E52370687AE9C00738FA5 /* AudioToolbox.framework */; };
 		8B9E523B0687AE9C00738FA5 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E52380687AE9C00738FA5 /* AudioUnit.framework */; };
 		8B9E523C0687AE9C00738FA5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E52390687AE9C00738FA5 /* CoreAudio.framework */; };
-		8B9E54A20687B3BC00738FA5 /* AudioDeviceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54A00687B3BC00738FA5 /* AudioDeviceList.cpp */; };
+		8B9E54A20687B3BC00738FA5 /* AudioDeviceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54A00687B3BC00738FA5 /* AudioDeviceList.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8B9E54A30687B3BC00738FA5 /* AudioDeviceList.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9E54A10687B3BC00738FA5 /* AudioDeviceList.h */; };
 		8B9E54B30687B59800738FA5 /* CAPlayThroughController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9E54B10687B59800738FA5 /* CAPlayThroughController.h */; };
-		8B9E54B40687B59800738FA5 /* CAPlayThroughController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54B20687B59800738FA5 /* CAPlayThroughController.mm */; };
+		8B9E54B40687B59800738FA5 /* CAPlayThroughController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54B20687B59800738FA5 /* CAPlayThroughController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8B9E54CF0687B6EB00738FA5 /* CAPlayThrough.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9E54CD0687B6EB00738FA5 /* CAPlayThrough.h */; };
-		8B9E54D00687B6EB00738FA5 /* CAPlayThrough.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54CE0687B6EB00738FA5 /* CAPlayThrough.mm */; };
-		8B9E54DE0687B72500738FA5 /* AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54DC0687B72500738FA5 /* AudioDevice.cpp */; };
+		8B9E54D00687B6EB00738FA5 /* CAPlayThrough.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54CE0687B6EB00738FA5 /* CAPlayThrough.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9E54DE0687B72500738FA5 /* AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E54DC0687B72500738FA5 /* AudioDevice.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8B9E54DF0687B72500738FA5 /* AudioDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9E54DD0687B72500738FA5 /* AudioDevice.h */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		E7B258861A6A292200CDD0E5 /* CAPlayThroughObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7B258851A6A292200CDD0E5 /* CAPlayThroughObjC.mm */; };
+		C50FB1411A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C50FB13F1A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h */; };
+		C50FB1421A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C50FB13F1A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h */; };
+		C50FB1431A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C50FB1401A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m */; };
+		C50FB1441A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C50FB1401A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m */; };
+		C50FB1471A6A9B1700E65DE0 /* Server.h in Headers */ = {isa = PBXBuildFile; fileRef = C50FB1451A6A9B1700E65DE0 /* Server.h */; };
+		C50FB1481A6A9B1700E65DE0 /* Server.h in Headers */ = {isa = PBXBuildFile; fileRef = C50FB1451A6A9B1700E65DE0 /* Server.h */; };
+		C50FB1491A6A9B1700E65DE0 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = C50FB1461A6A9B1700E65DE0 /* Server.m */; };
+		C50FB14A1A6A9B1700E65DE0 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = C50FB1461A6A9B1700E65DE0 /* Server.m */; };
+		E7B258861A6A292200CDD0E5 /* CAPlayThroughObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7B258851A6A292200CDD0E5 /* CAPlayThroughObjC.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E7B258891A6A29E400CDD0E5 /* CAPlayThroughObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B258881A6A29E400CDD0E5 /* CAPlayThroughObjC.h */; };
 		E7B2588A1A6A29E400CDD0E5 /* CAPlayThroughObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B258881A6A29E400CDD0E5 /* CAPlayThroughObjC.h */; };
 		E7B2588B1A6A2D1900CDD0E5 /* CAPlayThroughObjCinterface.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B258871A6A293800CDD0E5 /* CAPlayThroughObjCinterface.h */; };
@@ -80,6 +88,10 @@
 		8B9E54DD0687B72500738FA5 /* AudioDevice.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AudioDevice.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CAPlayThrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAPlayThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50FB13F1A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		C50FB1401A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		C50FB1451A6A9B1700E65DE0 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		C50FB1461A6A9B1700E65DE0 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 		E7B258851A6A292200CDD0E5 /* CAPlayThroughObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPlayThroughObjC.mm; sourceTree = "<group>"; };
 		E7B258871A6A293800CDD0E5 /* CAPlayThroughObjCinterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAPlayThroughObjCinterface.h; sourceTree = "<group>"; };
 		E7B258881A6A29E400CDD0E5 /* CAPlayThroughObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPlayThroughObjC.h; sourceTree = "<group>"; };
@@ -114,6 +126,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C50FB13F1A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h */,
+				C50FB1401A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m */,
 				E7B258871A6A293800CDD0E5 /* CAPlayThroughObjCinterface.h */,
 				E7B258881A6A29E400CDD0E5 /* CAPlayThroughObjC.h */,
 				E7B258851A6A292200CDD0E5 /* CAPlayThroughObjC.mm */,
@@ -125,6 +139,8 @@
 				8B9E54DD0687B72500738FA5 /* AudioDevice.h */,
 				8B9E54A00687B3BC00738FA5 /* AudioDeviceList.cpp */,
 				8B9E54A10687B3BC00738FA5 /* AudioDeviceList.h */,
+				C50FB1451A6A9B1700E65DE0 /* Server.h */,
+				C50FB1461A6A9B1700E65DE0 /* Server.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -225,7 +241,9 @@
 				E7B2588C1A6A2D1A00CDD0E5 /* CAPlayThroughObjCinterface.h in Headers */,
 				2BE43CF0154A070700317EFE /* AudioDeviceList.h in Headers */,
 				2BE43CF1154A070700317EFE /* CAPlayThroughController.h in Headers */,
+				C50FB1421A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h in Headers */,
 				2BE43CF2154A070700317EFE /* CAPlayThrough.h in Headers */,
+				C50FB1481A6A9B1700E65DE0 /* Server.h in Headers */,
 				2BE43CF3154A070700317EFE /* AudioDevice.h in Headers */,
 				E7B2588A1A6A29E400CDD0E5 /* CAPlayThroughObjC.h in Headers */,
 			);
@@ -238,7 +256,9 @@
 				E7B2588B1A6A2D1900CDD0E5 /* CAPlayThroughObjCinterface.h in Headers */,
 				8B9E54A30687B3BC00738FA5 /* AudioDeviceList.h in Headers */,
 				8B9E54B30687B59800738FA5 /* CAPlayThroughController.h in Headers */,
+				C50FB1411A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.h in Headers */,
 				8B9E54CF0687B6EB00738FA5 /* CAPlayThrough.h in Headers */,
+				C50FB1471A6A9B1700E65DE0 /* Server.h in Headers */,
 				8B9E54DF0687B72500738FA5 /* AudioDevice.h in Headers */,
 				E7B258891A6A29E400CDD0E5 /* CAPlayThroughObjC.h in Headers */,
 			);
@@ -291,7 +311,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = F70E30230BB2147A00C0C9FB /* Build configuration list for PBXProject "CAPlayThrough" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -338,8 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE43CFC154A070700317EFE /* main.m in Sources */,
+				C50FB1441A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m in Sources */,
 				2BE43CFD154A070700317EFE /* AudioDeviceList.cpp in Sources */,
 				2BE43CFE154A070700317EFE /* CAPlayThroughController.mm in Sources */,
+				C50FB14A1A6A9B1700E65DE0 /* Server.m in Sources */,
 				2BE43CFF154A070700317EFE /* CAPlayThrough.mm in Sources */,
 				2BE43D00154A070700317EFE /* AudioDevice.cpp in Sources */,
 				E7B2588D1A6A2D1E00CDD0E5 /* CAPlayThroughObjC.mm in Sources */,
@@ -353,8 +375,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				C50FB1431A6A9B0A00E65DE0 /* GCDAsyncUdpSocket.m in Sources */,
 				8B9E54A20687B3BC00738FA5 /* AudioDeviceList.cpp in Sources */,
 				8B9E54B40687B59800738FA5 /* CAPlayThroughController.mm in Sources */,
+				C50FB1491A6A9B1700E65DE0 /* Server.m in Sources */,
 				8B9E54D00687B6EB00738FA5 /* CAPlayThrough.mm in Sources */,
 				8B9E54DE0687B72500738FA5 /* AudioDevice.cpp in Sources */,
 				2B658F0A17E7E0FD00E2ADDE /* CARingBuffer.cpp in Sources */,
@@ -388,7 +412,6 @@
 		2BE43D09154A070700317EFE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = Info.plist;
@@ -406,7 +429,6 @@
 		2BE43D0A154A070700317EFE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				INFOPLIST_FILE = Info.plist;
@@ -424,7 +446,6 @@
 		2BE43D0B154A070700317EFE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -441,7 +462,6 @@
 		F70E30240BB2147A00C0C9FB /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -461,7 +481,6 @@
 		F70E30250BB2147A00C0C9FB /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -481,7 +500,6 @@
 		F70E30260BB2147A00C0C9FB /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -501,6 +519,7 @@
 		F70E30280BB2147A00C0C9FB /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = Info.plist;
@@ -518,6 +537,7 @@
 		F70E30290BB2147A00C0C9FB /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				INFOPLIST_FILE = Info.plist;
@@ -535,6 +555,7 @@
 		F70E302A0BB2147A00C0C9FB /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
